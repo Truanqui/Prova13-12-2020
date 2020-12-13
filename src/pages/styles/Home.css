@@ -1,0 +1,60 @@
+.frase{
+display: flex;
+list-style: none;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+font-size: 40px;
+justify-content: center;
+background-color: #dc1f25;
+border-radius: 40px;
+width: 800px;
+margin: 0% auto;
+
+}
+.texto{
+display: flex;
+list-style: none;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+font-size: 40px;
+justify-content: center;
+background-color: #dc1f25;
+border-radius: 40px;
+width: 800px;
+margin: 0% auto;
+width:10px ;
+}
+.geral{
+    margin: 0 auto;
+    width: 960px;
+}
+.caixaHome{
+    display: flex;
+    flex-direction: column;
+}
+.features{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+#txt{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+h2{
+color: black;
+font-size: 35px;
+font-weight: bolder;
+
+}
+p{
+    padding: 15px;
+    background-color:rgba(0, 0, 0, 0.719);
+    color: white;
+    font-size: 25px;
+    text-indent: 30px;
+    text-align: justify;
+    border-radius: 8px;
+}

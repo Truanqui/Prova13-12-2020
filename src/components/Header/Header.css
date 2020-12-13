@@ -1,0 +1,19 @@
+body{
+    background-color:red;
+    margin: 0 auto;
+    background-image:url(../../components/Image/fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.caixa{
+    background-color: white;
+    display: flex;
+}
+#container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 960px;
+    align-items: center;
+}
+
