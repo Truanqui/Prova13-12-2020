@@ -1,14 +1,27 @@
-import React from 'react';
+import React,{ useState} from 'react';
 import './Menu.css';
 import { Link } from 'react-router-dom';
 
+
 function Menu(){
+    const[Home,setHome] = useState(false);
+    const[Produto,setProduto] = useState(false);
+    const[Suporte,setSuporte] = useState(false);
+    const[Conta,setConta] = useState(false);
+    const[black,setBlack] = useState(false);
+
+    const clickHome = () => setHome(!setHome)
+    const clickProduto = () => setProduto(!setProduto)
+    const clickSuporte = () => setSuporte(!setSuporte)
+    const clickConta = () => setConta(!setConta)
+    const clickBlack = () => setBlack(!setBlack)
+        
     return(
         <div id="menu">
             <ul class="lista">
-                <Link to='/' className="linkHeader">
+                <Link onClick={clickHome} to='/' className="linkHeader">
                     <li>
-                        <a href="" className= "linkHeader">
+                        <a  href="" className={Home ? "linkHeaderAtivado" :"linkHeader"}>
                             <span></span>
                             <strong>Home</strong>
                         </a>
@@ -16,7 +29,7 @@ function Menu(){
                 </Link>
                 <Link to='/produto' className="linkHeader">
                     <li>
-                        <a href="" className= "linkHeader">
+                        <a onClick={clickProduto} href="" className={Produto ? "linkHeaderAtivado" :"linkHeader"}>
                             <span></span>
                             <strong>Produto</strong>
                         </a>
@@ -24,7 +37,7 @@ function Menu(){
                 </Link>
                 <Link to='/suporte' className="linkHeader">
                     <li> 
-                        <a href="" className= "linkHeader">
+                        <a onClick={clickSuporte} href="" className={Suporte ? "linkHeaderAtivado" :"linkHeader"}>
                             <span></span>
                             <strong>Suporte</strong>
                         </a>
@@ -32,7 +45,7 @@ function Menu(){
                 </Link>
                 <Link to='/conta' className="linkHeader">                  
                     <li> 
-                        <a href="" className= "linkHeader">
+                        <a  onClick={clickConta} href="" className={Conta ? "linkHeaderAtivado" :"linkHeader"}>
                             <span></span>
                             <strong>Conta</strong>
                         </a>

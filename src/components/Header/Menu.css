@@ -6,10 +6,11 @@
 .hOff{
     display: none;
 }
-body{
+/* body{
     margin: auto;
     background-color: white;
-}
+} */
+
 .lista strong{
     
     font-family: agency fb;
@@ -32,6 +33,12 @@ body{
 #menu{
     display: flex;
     align-items: center;
+    background-color: white;
+}
+#menuBlack{
+    display: flex;
+    align-items: center;
+    background-color: black;
 }
 #menu ul{
     display: flex;
@@ -44,6 +51,7 @@ body{
     align-content: center;
     padding: 10px;
     margin-right: 30px;
+   
 }
 /*
 .linkHeader{
@@ -86,120 +94,12 @@ body{
     left: 100%;
     transition: 1s;
 }
-#headerHbr{
-    display: none;
-}
-
-@media(max-width: 1200px){
-
-#header{
-    display: none;
-}
-#headerHbr{
-    display: block;
-    background-color: red;
-}
-#containerHbr{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    display: flex;
-    align-content: center;
-    padding: 10px; 
-}
-#container_menuHbr{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.cabecalhoHbr strong{ 
-    display: flex;
-    font-family: agency fb;
-    font-size: 30px;
-    text-transform: uppercase;
-}
-#menuBar{
-    width: 45px;
-    height: 40px;
-    margin-top: 35px;
-    margin-left: 10px;
-    cursor: pointer;
+.linkHeaderAtivado{
     position: relative;
-}
-.bar{
-    height: 5px;
-    width: 100%;
-    background-color: white;
-    display: block;
-    border-radius: 5px;
-    transition: 0.3s ease;
-}
-#bar1{
-    transform: translateY(-6px);
-}
-#bar3{
-    transform: translateY(6px);
-}
-#logoHbr {
-    display: flex;
-    justify-content: center;
-    margin-left: 50px;
-    margin-right: 20px;
-}
-#menuHbr{
-    position: absolute;
-    top: 79px;
-}
-#menuHbr ul{
-    display: flex;
-    position: absolute;
-    right: -180%;
-    margin-top: 27px;
-    flex-direction: column;
-    list-style: none;
-    
-}
-#menuHbr li{
-    margin: 0;
-    padding: 15px 30px;
-    border-bottom: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    background-color: #f62d2d8a
-}
-.linkHeaderHbr{
-    color: white;
+    display: inline-block;
+    color:red;
     text-decoration: none;
-}
-#menuHbr li:hover{
-    background-color: red;
-}
-.cabecalhoHbr{
-    transform: translateX(-350px);
-    transition: transform .2s linear;
-}
-.cabecalhoHbrOpen{
-    transform: translateX(150px);
-}
-#checkHbr{
-    display: none;
-}
-#checkHbr:checked ~ #bar1{
-    transform: translateY(4px) rotateZ(-45deg);
-}
-#checkHbr:checked ~ #bar2{
-    opacity: 0;
-}
-#checkHbr:checked ~ #bar3{
-    transform: translateY(-6px) rotateZ(45deg);
-}
-#labelHbr{
-    top: -23px;
-    left: -7px;
-    margin: 0;
-    padding: 10px;
-    width: 40px;
-    height: 40px;
-    position: absolute;
+    overflow: hidden;
+    transition: 0.2s;
 }
 
-}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './styles/Produto.css';
 import gta5 from '../components/Image/gta5.jpg';
 import homemaranha from '../components/Image/homemaranha.jpg';
@@ -6,6 +6,8 @@ import godofwar from '../components/Image/godofwar.jpg';
 import injustice2 from '../components/Image/injustice2.jpg';
 import Caixa from './Caixa/Caixa';
 import Carrinho from './Botoes/BCarrinho';
+import Lista from './json/Lista.js';
+
 
 
 function Produto(){
@@ -34,8 +36,14 @@ function Produto(){
                         <h1>R$ 9,99</h1>
                     </div> 
                     <div>
-                        <h3>CEP</h3>
-                        <Caixa funcao="text" name="cep" size="2" maxlength="5" /> - <Caixa funcao="text" name="cep2" size="" maxlength="3" />
+                          {/* <table>
+                            { Lista.map((Lista, index) =>
+                                <tr><td>{Lista.coluna}</td><td>{Lista.coluna1}</td><td> {Lista.coluna2}</td> {Lista.coluna3}<td> {Lista.coluna4}</td></tr>
+                            )}
+                            
+                        </table> */}
+                        <h3>Email</h3>
+                        <Caixa funcao="text" name="email" size="2" maxlength="5" /> 
                         <Carrinho id="boxInput"/>
                     </div>
                 </div>
